@@ -49,4 +49,4 @@ Und im Test 3 Hhabe ich getestet, ob die Validierung, und anforderung, bei der T
 ![Screenshot 2025-02-21 115132](https://github.com/user-attachments/assets/08428925-4af0-4152-8444-9471e0ac0f2c)
 
 
-Heute Abend habe ich noch meinenen ganzen Code kommentiert, für manche sachen brauchte ich jedoch die hilfe von AI da ich nicht alles ganz selber verstand.
+Heute Abend habe ich noch meinenen ganzen Code kommentiert, für manche sachen brauchte ich jedoch die hilfe von AI da ich nicht alles ganz selber verstand. Am schluss habe ich noch die Ordnerstruktur aufgebaut, und mit hilfe von Joki alle verbindungen geändert.
