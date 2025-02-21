@@ -1,6 +1,5 @@
-// kunden-liste.php
 <?php
-include 'config.php';
+require 'config.php';
 
 $sql = "SELECT * FROM kunden ORDER BY reg_date DESC";
 $result = $conn->query($sql);
