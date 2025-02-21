@@ -37,11 +37,16 @@ CREATE TABLE IF NOT EXISTS kunden (
 21.02.2025: Heute habe ich zuerst meine Fragen mit Joki angeschaut und Geklährt. Danach habe ich mir eine To-Do liste erstellt. Danach hane ich mit hilfe von AI meinen Code so überarbeitet, dass die Datenübermittelung nach dem POST/REDIRECT/GET-Prinzip läuft. Ich habe auch noch eine Einleitung geschriben bzw. auch Teile meine Planung übernommen. Danach habe ich noch die 3 im BBK geforderten Test-Cases gemacht. 
 
 Im Test 1. habe ich getestet ob die Pflichtfelder Funktionieren. Was natürlich auch so ist.
+![Screenshot 2025-02-21 112741](https://github.com/user-attachments/assets/0bdc2772-9d04-41db-a7f0-6e8ad40d40e0)
 
 
 Im Test 2 habe ich getestet, ob die Datenspeicherung und anzeige Funktioniert. was Ebenfalls so Ist.
+![Screenshot 2025-02-21 114551](https://github.com/user-attachments/assets/63660d67-5949-40ed-9361-a1f2045db8cf)
+![Screenshot 2025-02-21 114634](https://github.com/user-attachments/assets/a6bcd8b3-c89d-4d23-9190-71fbe9bbf613)
 
 
 Und im Test 3 Hhabe ich getestet, ob die Validierung, und anforderung, bei der Telefonnummer nur Zahlen ein zugeben, ebenfalls Funktionirt. Und nicht überaschend... es Funktionierte bestens.
+![Screenshot 2025-02-21 115132](https://github.com/user-attachments/assets/08428925-4af0-4152-8444-9471e0ac0f2c)
+
 
 Heute Abend habe ich noch meinenen ganzen Code kommentiert, für manche sachen brauchte ich jedoch die hilfe von AI da ich nicht alles ganz selber verstand.
