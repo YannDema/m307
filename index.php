@@ -1,7 +1,7 @@
 <?php
 // Hauptformular für Kundeneintragung
 // Session-Helper einbinden
-require 'session_helper.php';
+require './session_help/session_helper.php';
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -9,7 +9,7 @@ require 'session_helper.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kundenverwaltung</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
 </head>
 <body>
     <div class="container">

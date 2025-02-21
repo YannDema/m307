@@ -1,6 +1,6 @@
 <?php
 // Formular-Datenverarbeitung
-require 'config.php';
+require 'databaseconection/config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Formulardaten einsammeln
@@ -36,4 +36,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $conn->close();
-?>

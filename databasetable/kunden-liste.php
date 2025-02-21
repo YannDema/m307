@@ -1,6 +1,6 @@
 <?php
 // Anzeige aller eingetragenen Kunden
-require 'config.php';
+require './databaseconection/config.php';
 session_start();
 
 // Alle Kunden aus der Datenbank holen
@@ -14,7 +14,7 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kundenliste</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
 </head>
 <body>
     <div class="container">

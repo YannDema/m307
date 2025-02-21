@@ -18,4 +18,3 @@ function is_selected($field, $value) {
     }
     return '';
 }
-?>
