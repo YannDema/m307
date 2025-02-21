@@ -30,7 +30,7 @@ require './session_help/session_helper.php';
         <?php endif; ?>
         
         <!-- Formular für Kundendaten -->
-        <form action="insert.php" method="POST" onsubmit="return validateForm()">
+        <form action="./databasereading/insert.php" method="POST" onsubmit="return validateForm()">
             <!-- Anrede auswählen -->
             <div class="form-group">
                 <label for="anrede">Anrede <span class="required">*</span></label>

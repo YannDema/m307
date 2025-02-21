@@ -1,6 +1,6 @@
 <?php
 // Formular-Datenverarbeitung
-require 'databaseconection/config.php';
+require '../databaseconection/config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Formulardaten einsammeln
@@ -25,12 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Nach erfolgreicher Einfügung alle Formular-Daten aus der Session löschen
         unset($_SESSION['form_data']);
         // Umleitung zur Liste mit Erfolgsmeldung in der Query
-        header("Location: kunden-liste.php?success=1");
+        header("Location: ../kunden-liste.php?success=1");
         exit();
     } else {
         // Bei Fehler zur Formularseite zurück mit Fehlermeldung
         $_SESSION['error_msg'] = "Fehler beim Speichern: " . $conn->error;
-        header("Location: index.html?error=1");
+        header("Location: ../index.php?error=1");
         exit();
     }
 }
