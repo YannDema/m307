@@ -1,7 +1,9 @@
 <?php
+// Anzeige aller eingetragenen Kunden
 require 'config.php';
 session_start();
 
+// Alle Kunden aus der Datenbank holen
 $sql = "SELECT * FROM kunden ORDER BY reg_date DESC";
 $result = $conn->query($sql);
 ?>
@@ -16,17 +18,20 @@ $result = $conn->query($sql);
 </head>
 <body>
     <div class="container">
+        <!-- Kopfzeile mit Navigation -->
         <div class="header-nav">
             <h1>Kundenliste</h1>
             <a href="index.php" class="nav-button">Neuen Kunden anlegen</a>
         </div>
-        
+       
+        <!-- Erfolgsmeldung anzeigen, wenn Parameter gesetzt -->
         <?php if (isset($_GET['success']) && $_GET['success'] == '1'): ?>
         <div class="success-message">
             Kunde wurde erfolgreich angelegt!
         </div>
         <?php endif; ?>
         
+        <!-- Kundendaten als Tabelle anzeigen -->
         <div class="table-container">
             <table>
                 <thead>
@@ -44,6 +49,7 @@ $result = $conn->query($sql);
                 </thead>
                 <tbody>
                     <?php
+                    // Durch alle Datensätze iterieren
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
                             echo "<tr>";
@@ -59,6 +65,7 @@ $result = $conn->query($sql);
                             echo "</tr>";
                         }
                     } else {
+                        // Meldung bei leerer Tabelle
                         echo "<tr><td colspan='9'>Keine Kunden gefunden</td></tr>";
                     }
                     ?>

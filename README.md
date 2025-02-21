@@ -43,3 +43,5 @@ Im Test 2 habe ich getestet, ob die Datenspeicherung und anzeige Funktioniert. w
 
 
 Und im Test 3 Hhabe ich getestet, ob die Validierung, und anforderung, bei der Telefonnummer nur Zahlen ein zugeben, ebenfalls Funktionirt. Und nicht überaschend... es Funktionierte bestens.
+
+Heute Abend habe ich noch meinenen ganzen Code kommentiert, für manche sachen brauchte ich jedoch die hilfe von AI da ich nicht alles ganz selber verstand.

@@ -1,7 +1,9 @@
 <?php
+// Formular-Datenverarbeitung
 require 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Formulardaten einsammeln
     $anrede = $_POST['anrede'];
     $name = $_POST['name'];
     $adresse = $_POST['adresse'];
@@ -11,10 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $kundenklasse = $_POST['kundenklasse'];
     
-    // Daten in Session speichern für Fehlerbehandlung
+// Daten für mögliche Fehler speichern
     session_start();
     $_SESSION['form_data'] = $_POST;
-    
+
+// Daten in Datenbank einfügen    
     $sql = "INSERT INTO kunden (anrede, name, adresse, firmentelefon, mobiltelefon, festnetztelefon, email, kundenklasse)
     VALUES ('$anrede', '$name', '$adresse', '$firmentelefon', '$mobiltelefon', '$festnetztelefon', '$email', '$kundenklasse')";
     

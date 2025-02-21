@@ -1,4 +1,5 @@
 body {
+    /* Grundlegende Stileinstellungen */
     font-family: Arial, sans-serif;
     max-width: 1200px;
     margin: 0 auto;
@@ -6,6 +7,7 @@ body {
     background-color: #f5f5f5;
 }
 
+/* Hauptcontainer für Inhalte */
 .container {
     background-color: white;
     padding: 20px;
@@ -13,22 +15,26 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Überschriften-Stil */
 h1 {
     color: #333;
     text-align: center;
     margin-bottom: 20px;
 }
 
+/* Stil für Formularelemente-Gruppen */
 .form-group {
     margin-bottom: 15px;
 }
 
+/* Beschriftungsstil */
 label {
     display: block;
     margin-bottom: 5px;
     color: #666;
 }
 
+/* Stil für Eingabefelder */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -40,6 +46,7 @@ select {
     box-sizing: border-box;
 }
 
+/* Stil für den Absenden-Button */
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -50,15 +57,17 @@ input[type="submit"] {
     width: 100%;
 }
 
+/* Effekt bei Mausberührung */
 input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+/* Markierung für Pflichtfelder */
 .required {
     color: red;
 }
 
-/* Neue Styles für die Tabelle und Navigation */
+/* Kopfzeilenlayout mit Navigation */
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -66,6 +75,7 @@ input[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
+/* Stil für Navigationsbuttons */
 .nav-button {
     background-color: #4CAF50;
     color: white;
@@ -74,39 +84,46 @@ input[type="submit"]:hover {
     border-radius: 4px;
 }
 
+/* Hover-Effekt für Navigationsbuttons */
 .nav-button:hover {
     background-color: #45a049;
 }
 
+/* Container für Tabellen mit Scrollbalken */
 .table-container {
     overflow-x: auto;
 }
 
+/* Grundstil für Tabellen */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
+/* Stil für Tabellenzellen und Überschriften */
 th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
 }
 
+/* Stil für Tabellenüberschriften */
 th {
     background-color: #f2f2f2;
     font-weight: bold;
 }
 
+/* Abwechselnde Zeilenfarben */
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* Hover-Effekt für Tabellenzeilen */
 tr:hover {
     background-color: #f5f5f5;
 }
-/* Neue Stile für Erfolgsmeldungen und Fehlermeldungen */
+/* Stil für Erfolgsmeldungen */
 .success-message {
     background-color: #dff0d8;
     color: #3c763d;
@@ -116,6 +133,7 @@ tr:hover {
     border-radius: 4px;
 }
 
+/* Stil für Fehlermeldungen */
 .error-message {
     background-color: #f2dede;
     color: #a94442;
