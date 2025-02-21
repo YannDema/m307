@@ -36,9 +36,9 @@ require './session_help/session_helper.php';
                 <label for="anrede">Anrede <span class="required">*</span></label>
                 <select name="anrede" id="anrede" required>
                     <option value="">Bitte wählen</option>
-                    <option value="Herr" <?php echo is_selected('anrede', 'Herr'); ?>>Herr</option>
-                    <option value="Frau" <?php echo is_selected('anrede', 'Frau'); ?>>Frau</option>
-                    <option value="Divers" <?php echo is_selected('anrede', 'Divers'); ?>>Divers</option>
+                    <option value="Herr" <?php echo is_selected('anrede', 'Herr'); ?> >Herr</option>
+                    <option value="Frau" <?php echo is_selected('anrede', 'Frau'); ?> >Frau</option>
+                    <option value="Divers" <?php echo is_selected('anrede', 'Divers'); ?> >Divers</option>
                 </select>
             </div>
 
@@ -83,10 +83,10 @@ require './session_help/session_helper.php';
                 <label for="kundenklasse">Kundenklasse <span class="required">*</span></label>
                 <select name="kundenklasse" id="kundenklasse" required>
                     <option value="">Bitte wählen</option>
-                    <option value="Firmenkunde" <?php echo is_selected('kundenklasse', 'Firmenkunde'); ?>>Firmenkunde</option>
-                    <option value="Einzelperson" <?php echo is_selected('kundenklasse', 'Einzelperson'); ?>>Einzelperson</option>
-                    <option value="Partner" <?php echo is_selected('kundenklasse', 'Partner'); ?>>Partner</option>
-                    <option value="Betriebslehrjahrstelle" <?php echo is_selected('kundenklasse', 'Betriebslehrjahrstelle'); ?>>Betriebslehrjahrstelle</option>
+                    <option value="Firmenkunde" <?php echo is_selected('kundenklasse', 'Firmenkunde'); ?> >Firmenkunde</option>
+                    <option value="Einzelperson" <?php echo is_selected('kundenklasse', 'Einzelperson'); ?> >Einzelperson</option>
+                    <option value="Partner" <?php echo is_selected('kundenklasse', 'Partner'); ?> >Partner</option>
+                    <option value="Betriebslehrjahrstelle" <?php echo is_selected('kundenklasse', 'Betriebslehrjahrstelle'); ?> >Betriebslehrjahrstelle</option>
                 </select>
             </div>
 
