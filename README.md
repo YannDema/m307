@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS kunden (
         kundenklasse ENUM('Firmenkunde', 'Einzelperson', 'Partner', 'Betriebslehrjahrstelle') NOT NULL,
         reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     )
-    ```
+```
 21.02.2025: Heute habe ich zuerst meine Fragen mit Joki angeschaut und Geklährt. Danach habe ich mir eine To-Do liste erstellt. Danach hane ich mit hilfe von AI meinen Code so überarbeitet, dass die Datenübermittelung nach dem POST/REDIRECT/GET-Prinzip läuft. Ich habe auch noch eine Einleitung geschriben bzw. auch Teile meine Planung übernommen. Danach habe ich noch die 3 im BBK geforderten Test-Cases gemacht. 
 
 Im Test 1. habe ich getestet ob die Pflichtfelder Funktionieren. Was natürlich auch so ist.
