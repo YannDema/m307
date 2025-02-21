@@ -1,3 +1,7 @@
+<?php
+// Session-Helper einbinden
+require 'session_helper.php';
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -13,55 +17,64 @@
             <a href="kunden-liste.php" class="nav-button">Kundenliste anzeigen</a>
         </div>
         
+        <?php if (isset($_SESSION['error_msg'])): ?>
+        <div class="error-message">
+            <?php 
+            echo $_SESSION['error_msg']; 
+            unset($_SESSION['error_msg']); 
+            ?>
+        </div>
+        <?php endif; ?>
+        
         <form action="insert.php" method="POST" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="anrede">Anrede <span class="required">*</span></label>
                 <select name="anrede" id="anrede" required>
                     <option value="">Bitte wählen</option>
-                    <option value="Herr">Herr</option>
-                    <option value="Frau">Frau</option>
-                    <option value="Divers">Divers</option>
+                    <option value="Herr" <?php echo is_selected('anrede', 'Herr'); ?>>Herr</option>
+                    <option value="Frau" <?php echo is_selected('anrede', 'Frau'); ?>>Frau</option>
+                    <option value="Divers" <?php echo is_selected('anrede', 'Divers'); ?>>Divers</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="name">Vor- und Nachname <span class="required">*</span></label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required value="<?php echo get_session_value('name'); ?>">
             </div>
 
             <div class="form-group">
                 <label for="adresse">Adresse <span class="required">*</span></label>
-                <input type="text" id="adresse" name="adresse" required>
+                <input type="text" id="adresse" name="adresse" required value="<?php echo get_session_value('adresse'); ?>">
             </div>
 
             <div class="form-group">
                 <label for="firmentelefon">Firmentelefon</label>
-                <input type="tel" id="firmentelefon" name="firmentelefon" pattern="[0-9]+">
+                <input type="tel" id="firmentelefon" name="firmentelefon" pattern="[0-9]+" value="<?php echo get_session_value('firmentelefon'); ?>">
             </div>
 
             <div class="form-group">
                 <label for="mobiltelefon">Mobiltelefon <span class="required">*</span></label>
-                <input type="tel" id="mobiltelefon" name="mobiltelefon" required pattern="[0-9]+">
+                <input type="tel" id="mobiltelefon" name="mobiltelefon" required pattern="[0-9]+" value="<?php echo get_session_value('mobiltelefon'); ?>">
             </div>
 
             <div class="form-group">
                 <label for="festnetztelefon">Festnetztelefon</label>
-                <input type="tel" id="festnetztelefon" name="festnetztelefon" pattern="[0-9]+">
+                <input type="tel" id="festnetztelefon" name="festnetztelefon" pattern="[0-9]+" value="<?php echo get_session_value('festnetztelefon'); ?>">
             </div>
 
             <div class="form-group">
                 <label for="email">E-Mail <span class="required">*</span></label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required value="<?php echo get_session_value('email'); ?>">
             </div>
 
             <div class="form-group">
                 <label for="kundenklasse">Kundenklasse <span class="required">*</span></label>
                 <select name="kundenklasse" id="kundenklasse" required>
                     <option value="">Bitte wählen</option>
-                    <option value="Firmenkunde">Firmenkunde</option>
-                    <option value="Einzelperson">Einzelperson</option>
-                    <option value="Partner">Partner</option>
-                    <option value="Betriebslehrjahrstelle">Betriebslehrjahrstelle</option>
+                    <option value="Firmenkunde" <?php echo is_selected('kundenklasse', 'Firmenkunde'); ?>>Firmenkunde</option>
+                    <option value="Einzelperson" <?php echo is_selected('kundenklasse', 'Einzelperson'); ?>>Einzelperson</option>
+                    <option value="Partner" <?php echo is_selected('kundenklasse', 'Partner'); ?>>Partner</option>
+                    <option value="Betriebslehrjahrstelle" <?php echo is_selected('kundenklasse', 'Betriebslehrjahrstelle'); ?>>Betriebslehrjahrstelle</option>
                 </select>
             </div>
 
@@ -77,13 +90,6 @@
             return false;
         }
         return true;
-    }
-
-    window.onload = function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('success') === '1') {
-            alert('Kunde wurde erfolgreich angelegt!');
-        }
     }
     </script>
 </body>

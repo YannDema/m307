@@ -11,13 +11,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $kundenklasse = $_POST['kundenklasse'];
     
+    // Daten in Session speichern für Fehlerbehandlung
+    session_start();
+    $_SESSION['form_data'] = $_POST;
+    
     $sql = "INSERT INTO kunden (anrede, name, adresse, firmentelefon, mobiltelefon, festnetztelefon, email, kundenklasse)
     VALUES ('$anrede', '$name', '$adresse', '$firmentelefon', '$mobiltelefon', '$festnetztelefon', '$email', '$kundenklasse')";
     
     if ($conn->query($sql) === TRUE) {
-        header("Location: index.html?success=1");
+        // Nach erfolgreicher Einfügung alle Formular-Daten aus der Session löschen
+        unset($_SESSION['form_data']);
+        // Umleitung zur Liste mit Erfolgsmeldung in der Query
+        header("Location: kunden-liste.php?success=1");
+        exit();
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        // Bei Fehler zur Formularseite zurück mit Fehlermeldung
+        $_SESSION['error_msg'] = "Fehler beim Speichern: " . $conn->error;
+        header("Location: index.html?error=1");
+        exit();
     }
 }
 

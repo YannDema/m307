@@ -106,3 +106,21 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #f5f5f5;
 }
+/* Neue Stile für Erfolgsmeldungen und Fehlermeldungen */
+.success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+}
+
+.error-message {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+}

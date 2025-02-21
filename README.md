@@ -1,6 +1,8 @@
 # Modul 307 Challange
 
 ## Einleitung
+In diesem Modul, müssen wir eine Website mit Datanbank machen, und Userstorys Erfüllen. Ich habe mich Für die Storys des Workpackage 1 "Kunden & Adressen" entschiden. Dort hatte es 6 Userstories, wovon ich mich für 2 entscheiden musste. Ich entschide mich Für die Userstories 4&5 "Ich möchte sofort auf Kundendaten Zugriff haben, Anrede, Adresse, Firmen-, Direkt-, Mobiltelefon, E-Mail." & "Ich kann einen Kunden, einer Kundenklasse zuweisen.(Firmenkunde, Einzelperson, Partner, Betriebslehrjahrstelle). Ich Gedenke Für die Umsezung 2 Seiten zu machen und auf der ersten Seite ein Formular zu haben, bei dem man alles eingeben kann, und zuunterst mit einem select/option-Tag eine der Kundenklassen auswählen und zuweisen kann. Ich will danach noch einen Button auf eine 2te Seite auf der mir alle Angaben in Form einer Tabelle angezeigt werden.
+
 
 ### Tagebuch
 
@@ -32,4 +34,12 @@ CREATE TABLE IF NOT EXISTS kunden (
         reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     )
     ```
-21.02.2025: 
+21.02.2025: Heute habe ich zuerst meine Fragen mit Joki angeschaut und Geklährt. Danach habe ich mir eine To-Do liste erstellt. Danach hane ich mit hilfe von AI meinen Code so überarbeitet, dass die Datenübermittelung nach dem POST/REDIRECT/GET-Prinzip läuft. Ich habe auch noch eine Einleitung geschriben bzw. auch Teile meine Planung übernommen. Danach habe ich noch die 3 im BBK geforderten Test-Cases gemacht. 
+
+Im Test 1. habe ich getestet ob die Pflichtfelder Funktionieren. Was natürlich auch so ist.
+
+
+Im Test 2 habe ich getestet, ob die Datenspeicherung und anzeige Funktioniert. was Ebenfalls so Ist.
+
+
+Und im Test 3 Hhabe ich getestet, ob die Validierung, und anforderung, bei der Telefonnummer nur Zahlen ein zugeben, ebenfalls Funktionirt. Und nicht überaschend... es Funktionierte bestens.

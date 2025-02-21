@@ -1,5 +1,6 @@
 <?php
 require 'config.php';
+session_start();
 
 $sql = "SELECT * FROM kunden ORDER BY reg_date DESC";
 $result = $conn->query($sql);
@@ -17,8 +18,14 @@ $result = $conn->query($sql);
     <div class="container">
         <div class="header-nav">
             <h1>Kundenliste</h1>
-            <a href="index.html" class="nav-button">Neuen Kunden anlegen</a>
+            <a href="index.php" class="nav-button">Neuen Kunden anlegen</a>
         </div>
+        
+        <?php if (isset($_GET['success']) && $_GET['success'] == '1'): ?>
+        <div class="success-message">
+            Kunde wurde erfolgreich angelegt!
+        </div>
+        <?php endif; ?>
         
         <div class="table-container">
             <table>
