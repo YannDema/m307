@@ -1,7 +1,11 @@
 # Modul 307 Challange
 
 ## Einleitung
-In diesem Modul, müssen wir eine Website mit Datanbank machen, und Userstorys Erfüllen. Ich habe mich Für die Storys des Workpackage 1 "Kunden & Adressen" entschiden. Dort hatte es 6 Userstories, wovon ich mich für 2 entscheiden musste. Ich entschide mich Für die Userstories 4&5 "Ich möchte sofort auf Kundendaten Zugriff haben, Anrede, Adresse, Firmen-, Direkt-, Mobiltelefon, E-Mail." & "Ich kann einen Kunden, einer Kundenklasse zuweisen.(Firmenkunde, Einzelperson, Partner, Betriebslehrjahrstelle). Ich Gedenke Für die Umsezung 2 Seiten zu machen und auf der ersten Seite ein Formular zu haben, bei dem man alles eingeben kann, und zuunterst mit einem select/option-Tag eine der Kundenklassen auswählen und zuweisen kann. Ich will danach noch einen Button auf eine 2te Seite auf der mir alle Angaben in Form einer Tabelle angezeigt werden.
+In diesem Modul, müssen wir eine Website mit Datanbank machen, und Userstorys Erfüllen. Ich habe mich Für die Storys des Workpackage 1 "Kunden & Adressen" entschiden. Dort hatte es 6 Userstories, wovon ich mich für 2 entscheiden musste. Ich entschide mich Für die Userstories 4&5 "Ich möchte sofort auf Kundendaten Zugriff haben, Anrede, Adresse, Firmen-, Direkt-, Mobiltelefon, E-Mail." & "Ich kann einen Kunden, einer Kundenklasse zuweisen.(Firmenkunde, Einzelperson, Partner, Betriebslehrjahrstelle). Ich Gedenke Für die Umsezung 2 Seiten zu machen und auf der ersten Seite ein Formular zu haben, bei dem man alles eingeben kann, und zuunterst mit einem select/option-Tag eine der Kundenklassen auswählen und zuweisen kann. Ich will danach noch einen Button auf eine 2te Seite auf der mir alle Angaben in Form einer Tabelle angezeigt werden. Ich will das die Buttons alle Grün sind, da ich grün eine schöne Farbe finde. Die Tabelle soll abwechselnd, Weiss und hellgrau sein, dass man die Zeilen einfacher unterscheiden kann. Als Schriftart verwende ich Arial, da das Simpel und Clean ist. Auch den Rest des Layouts will ich simpel und Clean halten, mit einer weissen Box, welche sich mit einem Dropshadow vom hintergrund abhebt, und in der Alles Plaziert ist. Die ecken sind abgerundet, und die Outlines überall dünn und Schwarz. Pflichtfelder, sollten mit einem kleinen roten "*" gekennzeichnet werden.
+![Image (1)](https://github.com/user-attachments/assets/daea156a-6c61-4927-8309-98b6d9e070f6)
+![Image](https://github.com/user-attachments/assets/22bdc160-06c4-4519-bced-dd34122b1aa1)
+
+
 
 
 ### Tagebuch
