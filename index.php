@@ -38,7 +38,6 @@ require './session_help/session_helper.php';
                     <option value="">Bitte wählen</option>
                     <option value="Herr" <?php echo is_selected('anrede', 'Herr'); ?> >Herr</option>
                     <option value="Frau" <?php echo is_selected('anrede', 'Frau'); ?> >Frau</option>
-                    <option value="Divers" <?php echo is_selected('anrede', 'Divers'); ?> >Divers</option>
                 </select>
             </div>
 
